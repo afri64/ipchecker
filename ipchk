@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-echo "IP checker /v2.3"
+echo "IP checker /"
 echo "----------/"
 echo "ARC_dev"
 echo [1] check ip perangkat anda
