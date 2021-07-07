@@ -5,6 +5,7 @@ echo "----------/"
 echo "ARC_dev"
 echo [1] check ip perangkat anda
 echo [2] check ip yang ada di dalam wi-fi anda
+echo [3] update
 
 read -p "silahkan pilih [1/2] " pil;
 case $pil in
@@ -44,12 +45,20 @@ esac
   echo "______________________________________________________________________"
   echo "ip/perangkat lain yang sedang tersambung ke wifi anda saat ini adalah:"
   echo  "===================================================================="
-  arp -a
+  arp -a ip_checker_tools
 
   echo " "
   echo " "
 
 ;;
+
+3)
+  echo "updating..."
+  cd
+  rm -r 
+  git clone https://github.com/afri64/ipchecker/
+;;
+
 *)
 clear
   echo "silahkan pilih nomor yang ada di dalam menu"
