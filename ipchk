@@ -1,0 +1,41 @@
+#!/bin/bash
+clear
+echo "IP checker /"
+echo "----------/"
+echo "ARC_dev"
+echo [1] check ip perangkat anda
+echo [2] check ip yang ada di dalam wi-fi anda
+
+read -p "silahkan pilih [1/2] " pil;
+case $pil in
+
+1)
+  clear
+  echo self IP
+  clear
+  echo "[-----------------------------]"
+  echo "ip anda untuk saat ini adalah :"
+  echo "[=============================]"
+  curl ifconfig.me
+  echo " "
+
+;;
+2)
+  clear
+  echo "______________________________________________________________________"
+  echo "ip/perangkat lain yang sedang tersambung ke wifi anda saat ini adalah:"
+  echo  "===================================================================="
+  arp -a
+
+  echo " "
+  echo " "
+
+;;
+*)
+clear
+  echo "silahkan pilih nomor yang ada di dalam menu"
+
+;;
+
+
+esac
