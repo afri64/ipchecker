@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-echo "IP checker /"
+echo "IP checker /v2.4"
 echo "----------/"
 echo "ARC_dev"
 echo [1] check ip perangkat anda
@@ -55,7 +55,7 @@ esac
 3)
   echo "updating..."
   cd
-  rm -r ipchecker
+  rm -r ipchecker -y
   git clone https://github.com/afri64/ipchecker/
 ;;
 
