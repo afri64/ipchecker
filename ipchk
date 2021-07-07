@@ -55,7 +55,7 @@ esac
 3)
   echo "updating..."
   cd
-  rm -r 
+  rm -r ipchecker
   git clone https://github.com/afri64/ipchecker/
 ;;
 
