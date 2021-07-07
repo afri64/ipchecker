@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-echo "IP checker /v2.4"
+echo "IP checker /v2.5"
 echo "----------/"
 echo "ARC_dev"
 echo [1] check ip perangkat anda
@@ -45,7 +45,7 @@ esac
   echo "______________________________________________________________________"
   echo "ip/perangkat lain yang sedang tersambung ke wifi anda saat ini adalah:"
   echo  "===================================================================="
-  arp -a ip_checker_tools
+  arp -a 
 
   echo " "
   echo " "
