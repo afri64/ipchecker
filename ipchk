@@ -7,7 +7,7 @@ echo [1] check ip perangkat anda
 echo [2] check ip yang ada di dalam wi-fi anda
 echo [3] update
 
-read -p "silahkan pilih [1/2] " pil;
+read -p "silahkan pilih [1/3] " pil;
 case $pil in
 
 1)
