@@ -10,14 +10,33 @@ read -p "silahkan pilih [1/2] " pil;
 case $pil in
 
 1)
-  clear
-  echo self IP
-  clear
-  echo "[-----------------------------]"
-  echo "ip anda untuk saat ini adalah :"
-  echo "[=============================]"
-  curl ifconfig.me
-  echo " "
+     clear
+     echo self IP
+     clear
+     echo "[-----------------------------]"
+     echo "ip anda untuk saat ini adalah :"
+     echo "[=============================]"
+     echo " "
+     echo " "
+     read -p "[android] [linux] " pil;
+   case $pil in
+
+android)
+
+ echo "[android]*"
+ curl ifconfig.me
+
+ 
+
+
+;;
+
+linux)
+  echo "linux*"
+  ifconfig
+;;
+
+esac
 
 ;;
 2)
