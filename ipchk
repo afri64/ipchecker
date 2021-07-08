@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-echo " /IP checker/v2.8i"
+echo " /IP checker/v3.5i"
 echo "/----------/"
 echo "ARC_dev"
 echo " "
@@ -9,13 +9,16 @@ echo "[1] check ip perangkat anda                ::"
 echo "[2] check ip yang ada di dalam wi-fi anda  ::"
 echo "[3] exploit ip                             ::"
 echo "[4] update                                 ::"
+echo "[5] reset IP checker                       ::"
+echo "[6] uninstall IP chacker                   ::"
 echo ":::::::::::::::::::::::::::::::::::::::::::::"
 
-read -p "[[silahkan pilih [1-4]>" pil;
-echo ":::::::::::::::::::::::::::::::::::::::::::::"
-case $pil in
+
+read -p "silahkan pilih [1-6] " pil;
+   case $pil in
 
 1)
+
      clear
      echo self IP
      clear
@@ -29,8 +32,12 @@ case $pil in
 
 android)
 
+ mkdir android_system_detected
+ clear
  echo "[android]*"
  curl ifconfig.me
+ rm -r linux.txt
+
 
  
 
@@ -38,8 +45,11 @@ android)
 ;;
 
 linux)
+  rm -r android_system_detected
   echo "linux*"
   ifconfig
+  echo "linux system detected" > linux.txt
+
 ;;
 
 esac
@@ -85,6 +95,38 @@ esac
   bash ipchk
 
 ;;
+
+5)
+
+clear
+  echo "mereset IP checker..."
+  rm -r linux.txt
+  rm -r android_system_detected
+  clear
+  echo "IP checker selesai di reset"
+
+;;
+
+6)
+
+  echo uninstalling...
+  cd
+  cd
+  rm -r ipchecker
+
+;;
+
+02)
+
+clear
+   echo "Itu waifu gua:V"
+   echo " "
+   echo " waifu lu siapa?:V"
+   read waifu
+   echo "CIEEE CIEEE suka ama $waifu :V"
+
+;;
+
 
 *)
 clear
