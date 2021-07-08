@@ -55,8 +55,18 @@ esac
 3)
   echo "updating..."
   cd
+
+  clear
+  echo "menghapus instalasi lama..."
   rm -r ipchecker
+  clear
+  echo 'mendownload file baru...'
   git clone https://github.com/afri64/ipchecker/
+  echo "menginstall file baru..."
+  cd
+  cd ipchecker
+  bash ipchk
+
 ;;
 
 *)
